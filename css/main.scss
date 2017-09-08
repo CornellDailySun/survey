@@ -549,8 +549,26 @@ footer {
     a {
         text-decoration: none;
         color: inherit;
-        &:hover {
+        &:hover, &:active, &:visited {
             color: inherit;
         }
     }
 }
+
+.large-logo {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 500px;
+    opacity: .08;
+}
+
+.graph-section {
+
+}
+
+
+
+
+
+// Effects

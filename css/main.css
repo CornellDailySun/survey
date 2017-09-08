@@ -391,7 +391,14 @@ body.padded {
 footer a {
   text-decoration: none;
   color: inherit; }
-  footer a:hover {
+  footer a:hover, footer a:active, footer a:visited {
     color: inherit; }
+
+.large-logo {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  width: 500px;
+  opacity: .08; }
 
 /*# sourceMappingURL=main.css.map */
