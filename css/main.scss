@@ -1,0 +1,556 @@
+$box-shadow: 0 0 10px 0 rgba(229,232,235,.8), 0 0 0 transparent;
+$gray: #E5E9F2;
+$coffee: #2F2F2F;
+$text-color: #3C4858;
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #### Generated By: http://www.cufonfonts.com #### */
+
+@font-face {
+font-family: 'Circular Std Black';
+font-style: normal;
+font-weight: normal;
+src: local('Circular Std Black'), url('CircularStd-Black.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Circular Std Book';
+font-style: normal;
+font-weight: normal;
+src: local('Circular Std Book'), url('CircularStd-Book.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Circular Std Medium';
+font-style: normal;
+font-weight: normal;
+src: local('Circular Std Medium'), url('CircularStd-Medium.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Circular Std Black Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Circular Std Black Italic'), url('CircularStd-BlackItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Circular Std Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Circular Std Bold'), url('CircularStd-Bold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Circular Std Bold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Circular Std Bold Italic'), url('CircularStd-BoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Circular Std Book Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Circular Std Book Italic'), url('CircularStd-BookItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Circular Std Medium Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Circular Std Medium Italic'), url('CircularStd-MediumItalic.woff') format('woff');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Circular Std';
+}
+p {
+    font-size: 1.4rem;
+}
+body.padded {
+    padding-top: 60px;
+}
+
+
+
+.navbar {
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    z-index: 500;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $gray;
+
+    &.sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-shadow: $box-shadow;
+        border: none;
+    }
+
+    .logo {
+        height: 59px;
+        float: left;
+    }
+    .links {
+        float: right;
+    }
+    a {
+        line-height: 60px;
+        color: #000;
+        margin-left: 15px;
+        font-size: 1.2rem;
+        font-family: 'Circular Std';
+    }
+}
+
+.container {
+    max-width: 1200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container, .container-fluid {
+    padding: 100px 15px;
+}
+
+.overlay {
+    * {
+        position: relative;
+        z-index: 2;
+    }
+}
+.overlay::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #000;
+    opacity: .6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+.main-header {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: #000;
+    padding: 150px 0;
+    box-sizing: border-box;
+    background-image: url('../img/header.jpg');
+    background-size: cover;
+    background-position: center;
+
+    .mini-text {
+        color: #fff;
+        font-size: 1.2rem;
+        font-family: 'Circular Std';
+        font-weight: 300;
+    }
+    h1 {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 2.5rem;
+        line-height: 3.2rem;
+        letter-spacing: 1px;
+    }
+}
+
+
+.icon-card {
+    margin-bottom: 25px;
+    img {
+       max-height: 80px;
+        margin-bottom: 30px;
+    }
+}
+.bg-white {
+    background-color: #fff;
+    color: #000;
+    p {
+        color: $text-color;
+    }
+}
+
+.bg-black {
+    background-color: #000;
+    color: #fff;
+    p {
+        color: inherit;
+    }
+}
+
+.bg-coffee {
+    background-color: $coffee;
+    color: #fff;
+}
+
+.t-c { text-align: center; }
+.t-r { text-align: right; }
+.t-r p {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+
+
+.cards {
+    .container-fluid {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    [class^="col-"] {
+        padding: 100px 50px;
+        h2 {
+            font-size: 2.0rem;
+        }
+        p {
+            max-width: 450px;
+        }
+    }
+    [class*="bg-image"] {
+        background: red;
+        background-image: url("https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Common-dog-behaviors-explained.jpg?itok=FSzwbBoi");
+    }
+}
+
+footer {
+    a {
+        text-decoration: none;
+        color: inherit;
+        &:hover {
+            color: inherit;
+        }
+    }
+}
