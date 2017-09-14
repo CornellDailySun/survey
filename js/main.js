@@ -7,7 +7,12 @@ function showSchool() {
     var schoolHeatMap = document.getElementById("school-heatmap");
     var raceHeatMap = document.getElementById("race-heatmap");
     raceHeatMap.style.display = "none";
+
     schoolHeatMap.style.display = "block";
+    var schoolFilter = document.getElementById("show-school");
+    var raceFilter = document.getElementById("show-race");
+    schoolFilter.style.backgroundColor = "#bfbfbf";
+    raceFilter.style.backgroundColor = "white";
 }
 
 function showRace() {
@@ -15,6 +20,10 @@ function showRace() {
     var raceHeatMap = document.getElementById("race-heatmap");
     raceHeatMap.style.display = "block";
     schoolHeatMap.style.display = "none";
+    var schoolFilter = document.getElementById("show-school");
+    var raceFilter = document.getElementById("show-race");
+    schoolFilter.style.backgroundColor = "white";
+    raceFilter.style.backgroundColor = "#bfbfbf";
 }
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {

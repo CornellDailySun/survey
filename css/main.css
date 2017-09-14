@@ -78,12 +78,21 @@ textarea {
    Author's custom styles
    ========================================================================== */
 .dropdown-menu li{
-  padding: 10px;
+  padding: 15px;
+  list-style: none;
+  display: inline;
   
 }
 .dropdown-menu li:hover{
   background-color: #bfbfbf;
+  cursor: pointer;
 }
+
+.dropdown-menu {
+  margin-left: -4.5%;
+  margin-bottom: 3%;
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -264,7 +273,7 @@ textarea {
   font-weight: normal;
   src: local("Circular Std Medium Italic"), url("CircularStd-MediumItalic.woff") format("woff"); }
 h1, h2, h3, h4, h5, h6, p {
-  font-family: 'Circular Std'; }
+  font-family: 'Circular Std'!important; }
 
 p {
   font-size: 1.4rem; }
