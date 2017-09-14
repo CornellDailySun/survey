@@ -14,6 +14,14 @@
         <link rel="stylesheet" href="../css/grid.css">
         <link rel="stylesheet" href="../css/main.css">
         <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+        <!--jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       
+        <script src="../js/main.js"></script>
+        <!--bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -27,7 +35,7 @@
         <section class="main-header overlay">
         <div class="container">
             <span class="mini-text">2021 By the Numbers</span>
-            <h1>How well do you <br>actually know <br>your classmates?</h1>
+            <h1>Notable <br>Correlations</h1>
         </div>
         <img src="../img/logo-white.png" class="large-logo">
         </section>
@@ -80,47 +88,7 @@
         </div>
         </section>
 
-        <section class="bg-white cards">
-        <div class="container-fluid">
-            
-            <div class="row">
-                <div class="col-md-6 matchHeight bg-image-1">
-                </div>
-                <div class="col-md-6 matchHeight">
-                    <h2>Demographics</h2>
-                    <p>A short description about this particular section. What kind of data will be showcased <a href="#">more...</a></p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6 matchHeight t-r">
-                    <h2>Academics</h2>
-                    <p>A short description about this particular section. What kind of data will be showcased <a href="#">more...</a></p>
-                </div>
-                <div class="col-md-6 matchHeight bg-image-2">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6 matchHeight bg-image-3">
-                </div>
-                <div class="col-md-6 matchHeight">
-                    <h2>Lifestyle</h2>
-                    <p>A short description about this particular section. What kind of data will be showcased <a href="#">more...</a></p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6 matchHeight t-r">
-                    <h2>Correlations</h2>
-                    <p>A short description about this particular section. What kind of data will be showcased <a href="#">more...</a></p>
-                </div>
-                <div class="col-md-6 matchHeight bg-image-4">
-                </div>
-            </div>
-
-        </div>
-        </section>
+        
 
 
         <section class="bg-white">
@@ -135,11 +103,37 @@
             <section class="bg-white graph-section">
             <div class="container">
                 <h1>Heatmaps</h1>
+               <!-- <div class="dropdown">
+                  <button onclick="myFunction()" class="dropbtn">Filter by...<img src="../img/droparrow.png" class="droparrow"></button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                </div>-->
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Filter by...
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li onclick="showSchool()">By School</li>
+                      <li onclick="showRace()">By Race</li>
+                      
+                    </ul>
+                </div>
                 
-
-
-                <div class='tableauPlaceholder' id='viz1505360413336' style='position: relative'><noscript><a href='#'><img alt='School Heatmap ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;SchoolHeatmap&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='CDSCDS&#47;SchoolHeatmap' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;SchoolHeatmap&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1505360413336');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.60)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                 
+                
+                <div id="school-heatmap">
+                    <!--School Heatmap-->
+                    <div class='tableauPlaceholder' id='viz1505360413336' style='position: relative'><noscript><a href='#'><img alt='School Heatmap ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;SchoolHeatmap&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='CDSCDS&#47;SchoolHeatmap' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;SchoolHeatmap&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1505360413336');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.50)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+
+                <div id="race-heatmap">
+
+                    <!--Race Heatmap-->
+                    <div class='tableauPlaceholder' id='viz1505422895738' style='position: relative'><noscript><a href='#'><img alt='Race Heatmap ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;RaceHeatmap&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='CDSCDS&#47;RaceHeatmap' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;RaceHeatmap&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1505422895738');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+
                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 
                 <div class='tableauPlaceholder' id='viz1505359583119' style='position: relative'><noscript><a href='#'><img alt='Greek Heatmap ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;GreekHeatmap&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='CDSCDS&#47;GreekHeatmap' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;GreekHeatmap&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1505359583119');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.45)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
