@@ -25,6 +25,17 @@ function showRace() {
     schoolFilter.style.backgroundColor = "white";
     raceFilter.style.backgroundColor = "#bfbfbf";
 }
+
+function makeNav() {
+    var navbarItems = ["Overview", "Demographics", "Academics", "Lifestyle", "Correlations"];
+    var navbarA = [];
+    for (var i=0;i<navbarItems.length;i++){
+      var navbarString = "<a href='#'>"+navbarItems[i]+"</a>";
+      navbarA.push(navbarString);
+    }
+    console.log(navbarA);
+}
+
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
