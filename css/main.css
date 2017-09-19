@@ -77,6 +77,21 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   .dropdown-menu li{
+  padding: 15px;
+  list-style: none;
+  display: inline;
+  
+}
+.dropdown-menu li:hover{
+  background-color: #bfbfbf;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  margin-left: -4.5%;
+  margin-bottom: 3%;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
