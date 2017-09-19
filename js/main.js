@@ -1,8 +1,16 @@
+$( document ).ready(function() {
+    console.log( "ready!" );
+    $("#race-heatmap").css("display") = "none";
+});
+
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
+
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
+
+
 function showSchool() {
     var schoolHeatMap = document.getElementById("school-heatmap");
     var raceHeatMap = document.getElementById("race-heatmap");
