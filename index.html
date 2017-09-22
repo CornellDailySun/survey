@@ -27,6 +27,7 @@
 
         <section class="main-header">
         <div class="container-fluid">
+            <div class="imagebox"></div>
             <div class="curtain">
                 <div class="control">
                 <span class="mini-text">2021 By the Numbers</span>
@@ -86,11 +87,10 @@
 
         <section class="bg-white cards">
         <div class="container-fluid">
-            
+
             <div class="row">
-                <div class="col-md-6 matchHeight bg-image-1 slant-l">
-                </div>
-                <div class="col-md-6 matchHeight">
+                <div class="col-md-7 matchHeight bg-image-1 fade-in-on-entry"></div>
+                <div class="col-md-5 matchHeight content-on-right">
                     <h2>Overview</h2>
                     <p>A short description about this particular section. What kind of data will be showcased</p>
                     <p><a href="#">> Learn more</a></p>
@@ -98,19 +98,17 @@
             </div>
 
             <div class="row">
-                <div class="col-md-6 matchHeight t-r">
+                <div class="col-md-5 matchHeight t-r content-on-left">
                     <h2>Notable Correlations</h2>
                     <p>A short description about this particular section. What kind of data will be showcased</p>
                     <p><a href="#">> Learn more</a></p>
                 </div>
-                <div class="col-md-6 matchHeight bg-image-2 slant-r">
-                </div>
+                <div class="col-md-7 matchHeight bg-image-2 fade-in-on-entry"></div>
             </div>
            
             <div class="row">
-                <div class="col-md-6 matchHeight bg-image-1 slant-l">
-                </div>
-                <div class="col-md-6 matchHeight">
+                <div class="col-md-7 matchHeight bg-image-3 fade-in-on-entry"></div>
+                <div class="col-md-5 matchHeight content-on-right">
                     <h2>Correlation</h2>
                     <p>A short description about this particular section. What kind of data will be showcased</p>
                     <p><a href="#">> Learn more</a></p>
@@ -219,6 +217,26 @@
                 $('body').removeClass("padded");
               }
             });
+        </script>
+
+        <script type="text/javascript">
+        $(document).scroll(function() {
+            var windowHeight = $(window).height();
+            var elements = $('.fade-in-on-entry');
+
+            elements.each(function() {
+                var scrollTop     = $(window).scrollTop(),
+                    elementOffset = $(this).offset().top,
+                    distance      = (elementOffset - scrollTop);
+
+                if (distance + 200 < windowHeight) {
+                    $(this).addClass('active');
+                } else {
+                    $(this).removeClass('active');
+                }
+
+            });
+        });
         </script>
 
 

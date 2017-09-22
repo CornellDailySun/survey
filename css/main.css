@@ -312,10 +312,16 @@ body.padded {
   display: block;
   width: 100%;
   background: #000;
-  box-sizing: border-box;
-  background-image: url("../img/header.jpg");
-  background-size: cover;
-  background-position: right; }
+  box-sizing: border-box; }
+  .main-header .imagebox {
+    background-image: url("../img/header.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 60%; }
   .main-header .container-fluid {
     padding: 0; }
   .main-header .mini-text {
@@ -379,12 +385,6 @@ body.padded {
   padding-bottom: 0; }
 .cards [class^="col-"] {
   padding: 100px 50px; }
-  .cards [class^="col-"].slant-l {
-    -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%); }
-  .cards [class^="col-"].slant-r {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%); }
   .cards [class^="col-"] h2 {
     font-size: 2.0rem; }
   .cards [class^="col-"] p {
@@ -392,9 +392,36 @@ body.padded {
   .cards [class^="col-"] a {
     color: #000; }
 .cards [class*="bg-image"] {
-  background: red;
-  background-image: url("https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Common-dog-behaviors-explained.jpg?itok=FSzwbBoi");
-  background-size: cover; }
+  transition: all 2000ms ease-out;
+  background: #fff;
+  background-size: cover;
+  opacity: 0; }
+  .cards [class*="bg-image"].active {
+    opacity: 1; }
+.cards .content-on-right {
+  position: relative;
+  left: -11%;
+  padding-left: 8.3%;
+  background: #fff;
+  z-index: 2;
+  -webkit-clip-path: polygon(12.8% 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(12.8% 0, 100% 0, 100% 100%, 0% 100%); }
+.cards .content-on-left {
+  position: relative;
+  right: -11%;
+  padding-right: 8.3%;
+  background: #fff;
+  z-index: 2;
+  -webkit-clip-path: polygon(0 0, calc(100% - 12.8%) 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, calc(100% - 12.8%) 0%, 100% 100%, 0% 100%); }
+.cards .bg-image-1 {
+  background-image: url("../img/row-1.jpg");
+  background-position: center bottom; }
+.cards .bg-image-2 {
+  background-image: url("../img/row-1.jpg"); }
+.cards .bg-image-3 {
+  background-image: url("../img/row-3.jpg");
+  background-position: center center; }
 
 footer a {
   text-decoration: none;
