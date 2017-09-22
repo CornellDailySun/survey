@@ -302,6 +302,7 @@ textarea {
 $circular-medium: 'Circular Std Medium', 'Open Sans', sans-serif;
 $circular-black: 'Circular Std Black', 'Open Sans', sans-serif;
 $circular-black-italic: 'Circular Std Black Italic', 'Open Sans', sans-serif;
+$source-sans: 'Source Sans Pro', sans-serif;
 
 @font-face {
     font-family: 'Circular Std Black';
@@ -340,7 +341,10 @@ $circular-black-italic: 'Circular Std Black Italic', 'Open Sans', sans-serif;
 
 
 h1, h2, h3, h4, h5, h6, p {
-    font-family: $circular-medium;
+    font-family: $source-sans;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 800;
 }
 p {
     font-size: 1.4rem;
@@ -353,6 +357,7 @@ body.padded {
 
 .navbar {
     display: block;
+    display: none;
     width: 100%;
     height: 60px;
     background-color: #fff;
@@ -361,7 +366,7 @@ body.padded {
     padding-right: 15px;
     box-sizing: border-box;
     border-bottom: 1px solid $gray;
-
+    font-family: $source-sans;
     &.sticky {
         position: fixed;
         top: 0;
@@ -369,11 +374,13 @@ body.padded {
         right: 0;
         box-shadow: $box-shadow;
         border: none;
+        display: block;
     }
 
     .logo {
-        height: 59px;
+        height: 40px;
         float: left;
+        margin-top: 10px;
     }
     .links {
         float: right;
@@ -383,12 +390,11 @@ body.padded {
         color: #000;
         margin-left: 15px;
         font-size: 1.2rem;
-        font-family: $circular-medium;
     }
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -423,25 +429,78 @@ body.padded {
     display: block;
     width: 100%;
     background: #000;
-    padding: 150px 0;
     box-sizing: border-box;
-    background-image: url('../img/header.jpg');
-    background-size: cover;
-    background-position: center;
 
+    .logo {
+        height: 40px;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        z-index: 10;
+    }
+    .logo-white { display: none; }
+
+    .imagebox {
+        background-image: url('../img/header.jpg');
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 60%;
+    }
+
+    .container-fluid { 
+        padding: 0;
+    }
     .mini-text {
-        color: #fff;
+        color: #000;
         font-size: 1.2rem;
-        font-family: $circular-medium;
-        font-weight: 300;
+        font-weight: 500;
+    }
+    .curtain {
+        background: #fff;
+        color: #000;
+        width: 50%;
+        padding: 250px 0;
+        position: relative;
+        -webkit-clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+        margin-bottom: -1px;
+        padding-left: 30px;
+        .control {
+            width: 500px;
+            display: block;
+            margin: 0 auto;            
+        }
     }
     h1 {
-        font-family: $circular-black;
-        text-transform: uppercase;
-        color: #fff;
+        color: #000;
         font-size: 2.5rem;
         line-height: 3.2rem;
         letter-spacing: 1px;
+        margin-bottom: 0;
+    }
+    @media (max-width: 1000px) {
+        .curtain {
+            width: 70%;
+        }
+    }
+    @media (max-width: 600px) {
+        .curtain {
+            width: 100%;
+            background: rgba(0,0,0,.7);
+            -webkit-clip-path: none;
+            clip-path: none;
+        }
+        .imagebox {
+            width: 100%;
+        }
+        h1 { color: #fff; }
+        .mini-text { color: #fff; }
+        .logo-red { display: none; }
+        .logo-white { display: block; }
     }
 }
 
@@ -490,20 +549,80 @@ body.padded {
     }
     [class^="col-"] {
         padding: 100px 50px;
+
         h2 {
             font-size: 2.0rem;
         }
         p {
             max-width: 450px;
         }
+        a {
+            color: #000; 
+            font-weight: 800;
+        }
     }
     [class*="bg-image"] {
-        background: red;
-        background-image: url("https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Common-dog-behaviors-explained.jpg?itok=FSzwbBoi");
+        transition: all 2000ms ease-out;
+        background: #fff;
+        background-size: cover;
+        opacity: 0;
+        &.active {
+            opacity: 1;
+        }
+    }
+    .content-on-right {
+        position: relative;
+        left: -11%;
+        padding-left: 8.3%;
+        background: #fff;
+        z-index: 2;
+        //24.75
+
+        -webkit-clip-path: polygon(12.8% 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(12.8% 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .content-on-left {
+        position: relative;
+        right: -11%;
+        padding-right: 8.3%;
+        background: #fff;
+        z-index: 2;
+
+        -webkit-clip-path: polygon(0 0, calc(100% - 12.8%) 0%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, calc(100% - 12.8%) 0%, 100% 100%, 0% 100%);
+    }
+    .bg-image-1 {
+        background-image: url("../img/row-1.jpg");
+        background-position: center bottom;
+    }
+    .bg-image-2 {
+        background-image: url("../img/row-2.jpg");
+    }
+    .bg-image-3 {
+        background-image: url("../img/row-3.jpg");
+        background-position: center center;
+    }
+    @media (max-width: 1000px) {
+        .content-on-left, .content-on-right {
+            width: 100%;
+            left: 0;
+            right: 0;
+            -webkit-clip-path: none;
+            clip-path: none;
+        }
+        [class*="bg-image"] {
+            display: none;
+        }
+       [class^="col-"] {
+            padding: 50px 50px;
+        }
     }
 }
 
 footer {
+    .logo-sun {
+        height: 30px;
+    }
     a {
         text-decoration: none;
         color: inherit;

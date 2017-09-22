@@ -1,6 +1,6 @@
 $( document ).ready(function() {
     console.log( "ready!" );
-    $("#race-heatmap").css("display") = "none";
+    $("#race-heatmap").css("display", "none");
 });
 
 /* When the user clicks on the button, 
