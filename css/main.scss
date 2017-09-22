@@ -550,7 +550,6 @@ body.padded {
     [class^="col-"] {
         padding: 100px 50px;
 
-
         h2 {
             font-size: 2.0rem;
         }
@@ -603,7 +602,21 @@ body.padded {
         background-image: url("../img/row-3.jpg");
         background-position: center center;
     }
-
+    @media (max-width: 1000px) {
+        .content-on-left, .content-on-right {
+            width: 100%;
+            left: 0;
+            right: 0;
+            -webkit-clip-path: none;
+            clip-path: none;
+        }
+        [class*="bg-image"] {
+            display: none;
+        }
+       [class^="col-"] {
+            padding: 50px 50px;
+        }
+    }
 }
 
 footer {

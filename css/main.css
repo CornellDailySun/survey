@@ -454,6 +454,17 @@ body.padded {
 .cards .bg-image-3 {
   background-image: url("../img/row-3.jpg");
   background-position: center center; }
+@media (max-width: 1000px) {
+  .cards .content-on-left, .cards .content-on-right {
+    width: 100%;
+    left: 0;
+    right: 0;
+    -webkit-clip-path: none;
+    clip-path: none; }
+  .cards [class*="bg-image"] {
+    display: none; }
+  .cards [class^="col-"] {
+    padding: 50px 50px; } }
 
 footer .logo-sun {
   height: 30px; }
