@@ -357,6 +357,7 @@ body.padded {
 
 .navbar {
     display: block;
+    display: none;
     width: 100%;
     height: 60px;
     background-color: #fff;
@@ -373,11 +374,13 @@ body.padded {
         right: 0;
         box-shadow: $box-shadow;
         border: none;
+        display: block;
     }
 
     .logo {
-        height: 59px;
+        height: 40px;
         float: left;
+        margin-top: 10px;
     }
     .links {
         float: right;
@@ -427,6 +430,16 @@ body.padded {
     width: 100%;
     background: #000;
     box-sizing: border-box;
+
+    .logo {
+        height: 40px;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        z-index: 10;
+    }
+    .logo-white { display: none; }
+
     .imagebox {
         background-image: url('../img/header.jpg');
         background-size: cover;
@@ -455,6 +468,7 @@ body.padded {
         -webkit-clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
         clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
         margin-bottom: -1px;
+        padding-left: 30px;
         .control {
             width: 500px;
             display: block;
@@ -467,6 +481,26 @@ body.padded {
         line-height: 3.2rem;
         letter-spacing: 1px;
         margin-bottom: 0;
+    }
+    @media (max-width: 1000px) {
+        .curtain {
+            width: 70%;
+        }
+    }
+    @media (max-width: 600px) {
+        .curtain {
+            width: 100%;
+            background: rgba(0,0,0,.7);
+            -webkit-clip-path: none;
+            clip-path: none;
+        }
+        .imagebox {
+            width: 100%;
+        }
+        h1 { color: #fff; }
+        .mini-text { color: #fff; }
+        .logo-red { display: none; }
+        .logo-white { display: block; }
     }
 }
 
@@ -525,6 +559,7 @@ body.padded {
         }
         a {
             color: #000; 
+            font-weight: 800;
         }
     }
     [class*="bg-image"] {
@@ -562,7 +597,7 @@ body.padded {
         background-position: center bottom;
     }
     .bg-image-2 {
-        background-image: url("../img/row-1.jpg");
+        background-image: url("../img/row-2.jpg");
     }
     .bg-image-3 {
         background-image: url("../img/row-3.jpg");
@@ -572,6 +607,9 @@ body.padded {
 }
 
 footer {
+    .logo-sun {
+        height: 30px;
+    }
     a {
         text-decoration: none;
         color: inherit;

@@ -252,6 +252,7 @@ body.padded {
 
 .navbar {
   display: block;
+  display: none;
   width: 100%;
   height: 60px;
   background-color: #fff;
@@ -267,10 +268,12 @@ body.padded {
     left: 0;
     right: 0;
     box-shadow: 0 0 10px 0 rgba(229, 232, 235, 0.8), 0 0 0 transparent;
-    border: none; }
+    border: none;
+    display: block; }
   .navbar .logo {
-    height: 59px;
-    float: left; }
+    height: 40px;
+    float: left;
+    margin-top: 10px; }
   .navbar .links {
     float: right; }
   .navbar a {
@@ -313,6 +316,14 @@ body.padded {
   width: 100%;
   background: #000;
   box-sizing: border-box; }
+  .main-header .logo {
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 10; }
+  .main-header .logo-white {
+    display: none; }
   .main-header .imagebox {
     background-image: url("../img/header.jpg");
     background-size: cover;
@@ -336,7 +347,8 @@ body.padded {
     position: relative;
     -webkit-clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
-    margin-bottom: -1px; }
+    margin-bottom: -1px;
+    padding-left: 30px; }
     .main-header .curtain .control {
       width: 500px;
       display: block;
@@ -347,6 +359,25 @@ body.padded {
     line-height: 3.2rem;
     letter-spacing: 1px;
     margin-bottom: 0; }
+  @media (max-width: 1000px) {
+    .main-header .curtain {
+      width: 70%; } }
+  @media (max-width: 600px) {
+    .main-header .curtain {
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      -webkit-clip-path: none;
+      clip-path: none; }
+    .main-header .imagebox {
+      width: 100%; }
+    .main-header h1 {
+      color: #fff; }
+    .main-header .mini-text {
+      color: #fff; }
+    .main-header .logo-red {
+      display: none; }
+    .main-header .logo-white {
+      display: block; } }
 
 .icon-card {
   margin-bottom: 25px; }
@@ -390,7 +421,8 @@ body.padded {
   .cards [class^="col-"] p {
     max-width: 450px; }
   .cards [class^="col-"] a {
-    color: #000; }
+    color: #000;
+    font-weight: 800; }
 .cards [class*="bg-image"] {
   transition: all 2000ms ease-out;
   background: #fff;
@@ -418,11 +450,13 @@ body.padded {
   background-image: url("../img/row-1.jpg");
   background-position: center bottom; }
 .cards .bg-image-2 {
-  background-image: url("../img/row-1.jpg"); }
+  background-image: url("../img/row-2.jpg"); }
 .cards .bg-image-3 {
   background-image: url("../img/row-3.jpg");
   background-position: center center; }
 
+footer .logo-sun {
+  height: 30px; }
 footer a {
   text-decoration: none;
   color: inherit; }
