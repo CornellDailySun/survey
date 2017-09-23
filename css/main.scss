@@ -451,7 +451,7 @@ body.padded {
         width: 60%;
     }
 
-    .container-fluid { 
+    .container-fluid {
         padding: 0;
     }
     .mini-text {
@@ -472,12 +472,12 @@ body.padded {
         .control {
             width: 500px;
             display: block;
-            margin: 0 auto;            
+            margin: 0 auto;
         }
     }
     h1 {
         color: #000;
-        font-size: 2.5rem;
+        font-size: 2.1rem;
         line-height: 3.2rem;
         letter-spacing: 1px;
         margin-bottom: 0;
@@ -487,7 +487,7 @@ body.padded {
             width: 70%;
         }
     }
-    @media (max-width: 600px) {
+    @media (max-width: 670px) {
         .curtain {
             width: 100%;
             background: rgba(0,0,0,.7);
@@ -557,7 +557,7 @@ body.padded {
             max-width: 450px;
         }
         a {
-            color: #000; 
+            color: #000;
             font-weight: 800;
         }
     }
@@ -644,8 +644,19 @@ footer {
 
 }
 
+body {
+    overflow-x: hidden;
+}
 
+h2 {
+    font-size: 1.8rem;
+}
 
+@media (min-width: 450px) {
+    .main-header h1 {
+        font-size: 2.9rem !important;
+    }
+}
 
 
 // Effects
