@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="css/grid.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -25,16 +25,26 @@
 
  
 
-        <section class="main-header overlay">
-        <div class="container">
-            <span class="mini-text">2021 By the Numbers</span>
-            <h1>How well do you <br>actually know <br>your classmates?</h1>
+        <section class="main-header">
+        <div class="container-fluid">
+            <a href="index.html">
+                <img src="img/logo-red.png" class="logo logo-red">
+                <img src="img/logo-white.png" class="logo logo-white">
+            </a>
+            <div class="imagebox"></div>
+            <div class="curtain">
+                <div class="control">
+                <span class="mini-text">2021 By the Numbers</span>
+                <h1>How well do you <br>actually know <br>your classmates?</h1>
+                </div>
+            </div>
         </div>
-        <img src="img/logo-white.png" class="large-logo">
         </section>
 
        <nav class="navbar">
-            <img src="img/logo-red.png" class="logo">
+            <a href="index.html">
+                <img src="img/logo-red.png" class="logo">
+            </a>
             <div class="links">
                 <a href="#">Overview</a>
                 <a href="html/demographics.html">The Data</a>
@@ -83,25 +93,33 @@
 
         <section class="bg-white cards">
         <div class="container-fluid">
-            
+
             <div class="row">
-                <div class="col-md-6 matchHeight bg-image-1">
-                </div>
-                <div class="col-md-6 matchHeight">
-                    <h2>Data</h2>
-                    <p>A short description about this particular section. What kind of data will be showcased <a href="#">more...</a></p>
+                <div class="col-md-7 matchHeight bg-image-1 fade-in-on-entry"></div>
+                <div class="col-md-5 matchHeight content-on-right">
+                    <h2>Overview</h2>
+                    <p>A short description about this particular section. What kind of data will be showcased</p>
+                    <p><a href="#">&gt; Learn more</a></p>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-md-6 matchHeight t-r">
+                <div class="col-md-5 matchHeight t-r content-on-left">
                     <h2>Notable Correlations</h2>
-                    <p>A short description about this particular section. What kind of data will be showcased <a href="#">more...</a></p>
+                    <p>A short description about this particular section. What kind of data will be showcased</p>
+                    <p><a href="#">&gt; Learn more</a></p>
                 </div>
-                <div class="col-md-6 matchHeight bg-image-2">
+                <div class="col-md-7 matchHeight bg-image-2 fade-in-on-entry"></div>
+            </div>
+           
+            <div class="row">
+                <div class="col-md-7 matchHeight bg-image-3 fade-in-on-entry"></div>
+                <div class="col-md-5 matchHeight content-on-right">
+                    <h2>Correlation</h2>
+                    <p>A short description about this particular section. What kind of data will be showcased</p>
+                    <p><a href="#">&gt; Learn more</a></p>
                 </div>
             </div>
-
             <!--<div class="row">
                 <div class="col-md-6 matchHeight bg-image-3">
                 </div>
@@ -132,7 +150,7 @@
         </section>
 
         
-        <hr><!-- oooooooooooooooooooooooo This is a generic section oooooooooooooooooooooooo -->
+        <!-- oooooooooooooooooooooooo This is a generic section oooooooooooooooooooooooo -->
         <!--    <div class="container">
                 <i>The following is a sample section</i><br>
                 <i>Copy &amp; paste, changing the copy/graph:</i>
@@ -152,7 +170,7 @@
             </div>
             </section>-->
 
-        <hr><!-- oooooooooooooooooooooooo This is a generic section oooooooooooooooooooooooo -->
+        <!-- oooooooooooooooooooooooo This is a generic section oooooooooooooooooooooooo -->
 
 
 
@@ -164,7 +182,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <h2>The Cornell Daily Sun</h2>
-                    <p>Megan Roche, <a target="_blank" href="http://simeon.io">Simeon Videnov</a>, <br>Drew Musto, Melody Li, Sophia Deng</p>
+                    <p>Megan Roche, Simeon Videnov, <br>Drew Musto, Melody Li, Sophia Deng</p>
                 </div>
                 <div class="col-md-6">
                     <h2>Cornell Data Science</h2>
@@ -205,6 +223,26 @@
                 $('body').removeClass("padded");
               }
             });
+        </script>
+
+        <script type="text/javascript">
+        $(document).scroll(function() {
+            var windowHeight = $(window).height();
+            var elements = $('.fade-in-on-entry');
+
+            elements.each(function() {
+                var scrollTop     = $(window).scrollTop(),
+                    elementOffset = $(this).offset().top,
+                    distance      = (elementOffset - scrollTop);
+
+                if (distance + 200 < windowHeight) {
+                    $(this).addClass('active');
+                } else {
+                    $(this).removeClass('active');
+                }
+
+            });
+        });
         </script>
 
 
