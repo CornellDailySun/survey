@@ -44,22 +44,22 @@
         </div>
         </section>
 
-       <nav class="navbar">
+        <div id="hamburger"><i data-feather="menu"></i></div>
+        <nav class="navbar no-display" id="nav">
             <a href="../index.html">
                 <img src="../img/logo-red.png" class="logo">
             </a>
             <div class="links">
-                <a href="../index.html">Overview</a>
-                <a href="demographics.html">The Data</a>
-                <!--<a href="#">Academics</a>
-                <a href="#">Lifestyle</a>-->
-                <a href="#">Correlations</a>
+                <div class="navbar__item"><a href="../index.html">Overview</a></div>
+                    <div class="navbar__item"><a href="demographics.html">Demographics & Academics</a></div>
+                    <div class="navbar__item"><a href="lifestyle.html">Lifestyle & Ideology</a></div>
+                <div class="navbar__item"><a href="#">Correlations</a></div>
             </div>
         </nav>
 
-       
 
-        
+
+
         <!-- oooooooooooooooooooooooo This is a generic section oooooooooooooooooooooooo -->
             <section class="bg-white graph-section">
             <div class="container">
@@ -72,14 +72,14 @@
                     <a href="#">Link 3</a>
                   </div>
                 </div>-->
-               
+
                     <ul class="dropdown-menu">
                       <li id="show-school" onclick="showSchool()">By College</li>
                       <li id="show-race" onclick="showRace()">By Race</li>
                     </ul>
-                
-                
-                
+
+
+
                 <div id="school-heatmap">
                     <!--School Heatmap-->
                     <div class='tableauPlaceholder' id='viz1505360413336' style='position: relative'><noscript><a href='#'><img alt='School Heatmap ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;SchoolHeatmap&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='CDSCDS&#47;SchoolHeatmap' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;SchoolHeatmap&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1505360413336');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.50)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
@@ -91,14 +91,14 @@
                     <div class='tableauPlaceholder' id='viz1505422895738' style='position: relative'><noscript><a href='#'><img alt='Race Heatmap ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;RaceHeatmap&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='CDSCDS&#47;RaceHeatmap' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;RaceHeatmap&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1505422895738');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                 </div>
 
-                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                
+                 <p class="graph__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
                 <div class='tableauPlaceholder' id='viz1505359583119' style='position: relative'><noscript><a href='#'><img alt='Greek Heatmap ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;GreekHeatmap&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='CDSCDS&#47;GreekHeatmap' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;GreekHeatmap&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1505359583119');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.35)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
 
 
-            
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+                <p class="graph__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
             </section>
 
@@ -114,7 +114,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <h2>The Cornell Daily Sun</h2>
-                    <p>Brian LaPlaca, Drew Musto, Emma Williams,<br> Megan Roche, Melody Li, Mind Apivessa, <br>Simeon Videnov, Sophia Deng</p>
+                    <p>Brian LaPlaca, Drew Musto, Emma Williams,<br> Megan Roche, Melody Li, Mind Apivessa, <br>Simeon Videnov, Sophia Deng <br> Julian Ohta</p>
                 </div>
                 <div class="col-md-6">
                     <h2>Cornell Data Science</h2>
@@ -140,21 +140,6 @@
         $(function() {
             $('.matchHeight').matchHeight();
         });
-        </script>
-
-        <script type="text/javascript">
-            var  mn = $('.navbar');
-            hdr = $('.main-header').outerHeight();
-
-            $(window).scroll(function() {
-              if($(this).scrollTop() > hdr) {
-                mn.addClass("sticky");
-                $('body').addClass("padded");
-              } else {
-                mn.removeClass("sticky");
-                $('body').removeClass("padded");
-              }
-            });
         </script>
 
 
