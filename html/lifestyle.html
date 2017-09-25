@@ -16,18 +16,19 @@
         <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
         <!--jquery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-       
+
         <script src="../js/main.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
     </head>
     <body>
+        <div class="body-wrap">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
 
- 
+
          <section class="main-header">
         <div class="container-fluid">
             <a href="../index.html">
@@ -44,31 +45,31 @@
         </div>
         </section>
 
-
-       <nav class="navbar">
+        <div id="hamburger"><i data-feather="menu"></i></div>
+        <nav class="navbar no-display" id="nav">
             <a href="../index.html">
                 <img src="../img/logo-red.png" class="logo">
             </a>
             <div class="links">
-                <a href="../index.html">Overview</a>
-                <a href="demographics.html">Demographics & Academics</a>
-                <a href="#">Lifestyle & Ideology</a>
-                <a href="correlations.html">Correlations</a>
+                <div class="navbar__item"><a href="../index.html">Overview</a></div>
+                <div class="navbar__item"><a href="demographics.html">Demographics & Academics</a></div>
+                <div class="navbar__item"><a href="#">Lifestyle & Ideology</a></div>
+                <div class="navbar__item"><a href="correlations.html">Correlations</a></div>
             </div>
         </nav>
 
-       
 
-        
+
+
             <!-- oooooooooooooooooooooooo This is a generic section oooooooooooooooooooooooo -->
             <section class="bg-white graph-section">
             <div class="container">
-            
-                
+
+
                 <h1>Political Alignment</h1>
                 <div class='tableauPlaceholder' id='viz1505833322015' style='position: relative'><noscript><a href='#'><img alt='Political Alignment ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Sheet17&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='CDSCDS&#47;Sheet17' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Sheet17&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1505833322015');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.35)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                 <p>Cornellians <a href="http://cornellsun.com/2016/11/07/poll-students-choose-clinton-in-droves/">overwhelmingly supported Hillary Clinton in the 2016 presidential election</a>, November polling by The Cornell Daily Sun revealed, and our data suggest that the Class of 2021 wouldn’t have polled much differently. The <a href="http://cornellsun.com/2015/10/15/cornell-faculty-donations-flood-left%E2%80%88filings-show/">leftward sway of Cornell’s campus</a> is not a secret, and, from the looks of our data, the Class of 2021 probably won’t be the one to initiate the conservative revolution.</p>
-                
+
                 <h1>Are You a Virgin?</h1>
                 <div class='tableauPlaceholder' id='viz1505833113257' style='position: relative'><noscript><a href='#'><img alt='Are You a Virgin? ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Sheet11&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='CDSCDS&#47;Sheet11' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Sheet11&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1505833113257');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                 <p>68.9 percent of our respondents are virgins. And that’s okay. See, if The Cornell Daily Sun were The Harvard Crimson, we’d <a href="https://twitter.com/thecrimson/status/903623555254026240">make fun of you all</a>. But, we’re not, and that’s because at Cornell, we actually accept people for who they are. The beautiful thing is that, for many Cornellians, a learning experience awaits, and this is <a href="http://www.thecrimson.com/article/2013/12/3/grade-inflation-mode-a/">more than Harvard can say.</a></p>
@@ -77,7 +78,7 @@
                 <div class='tableauPlaceholder' id='viz1505833251087' style='position: relative'><noscript><a href='#'><img alt='Sexuality ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Sheet16&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='CDSCDS&#47;Sheet16' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Sheet16&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1505833251087');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                 <p>Of those who responded to this question, 78.6 percent said they were heterosexual and 21.4 percent said they were bisexual, homosexual or other. For those 21.4 percent, and even for those not in the 21.4 percent, Cornell’s <a href="http://dos.cornell.edu/lgbt-resource-center">LGBT Resource Center</a>, located at 626 Thurston Ave (“six-two-six”), could be an important, helpful place. Unfortunately for the resource center, it recently lost its director, <a href="http://cornellsun.com/2015/09/30/cornell-close-ups-patchcoski-trained-in-seminary-before-becoming-lgbt%E2%80%88director-at-cornell/">Brian Patchcoski</a>, to Penn State. Widely respected while at Cornell, Patchcoski will direct the LGBTQA resource center at Penn State’s 46,606-student University Park campus.</p>
 
-                
+
 
                 <h1>Do You Drink Socially?</h1>
                 <div class='tableauPlaceholder' id='viz1505833362806' style='position: relative'><noscript><a href='#'><img alt='Do You Drink Socially? ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Sheet18&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='CDSCDS&#47;Sheet18' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Sheet18&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1505833362806');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
@@ -93,9 +94,9 @@
 
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
-                
+
             </div>
-            
+
 
             </section>
 
@@ -111,7 +112,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <h2>The Cornell Daily Sun</h2>
-                    <p>Brian LaPlaca, Drew Musto, Emma Williams,<br> Megan Roche, Melody Li, Mind Apivessa, <br>Simeon Videnov, Sophia Deng</p>
+                    <p>Brian LaPlaca, Drew Musto, Emma Williams,<br> Megan Roche, Melody Li, Mind Apivessa, <br>Simeon Videnov, Sophia Deng <br> Julian Ohta</p>
                 </div>
                 <div class="col-md-6">
                     <h2>Cornell Data Science</h2>
@@ -139,21 +140,6 @@
         });
         </script>
 
-        <script type="text/javascript">
-            var  mn = $('.navbar');
-            hdr = $('.main-header').outerHeight();
-
-            $(window).scroll(function() {
-              if($(this).scrollTop() > hdr) {
-                mn.addClass("sticky");
-                $('body').addClass("padded");
-              } else {
-                mn.removeClass("sticky");
-                $('body').removeClass("padded");
-              }
-            });
-        </script>
-
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -164,5 +150,6 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-2463518-1','auto');ga('send','pageview');
         </script>
+        </div>
     </body>
 </html>

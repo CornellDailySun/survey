@@ -1,6 +1,6 @@
 $box-shadow: 0 0 10px 0 rgba(229,232,235,.8), 0 0 0 transparent;
 $gray: #E5E9F2;
-$coffee: #2F2F2F;
+$coffee: #333333;
 $text-color: #3C4858;
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
@@ -16,7 +16,7 @@ $text-color: #3C4858;
 
 html {
     color: #222;
-    font-size: 1em;
+    font-size: .9em;
     line-height: 1.4;
 }
 
@@ -350,7 +350,7 @@ p {
     font-size: 1.4rem;
 }
 body.padded {
-    //padding-top: 60px;
+    padding-top: 60px;
 }
 
 
@@ -359,7 +359,6 @@ body.padded {
     display: block;
     display: none;
     width: 100%;
-    height: 60px;
     background-color: #fff;
     z-index: 500;
     padding-left: 15px;
@@ -377,13 +376,25 @@ body.padded {
         display: block;
     }
 
+    &__item {
+        display: block;
+    }
+
     .logo {
         height: 40px;
         float: left;
         margin-top: 10px;
+        display: none;
     }
     .links {
-        float: right;
+        float: left;
+        display: block;
+
+        &::after {
+            content: ' ';
+            display: block;
+            clear: both;
+        }
     }
     a {
         line-height: 60px;
@@ -504,6 +515,13 @@ body.padded {
     }
 }
 
+.graph {
+    &__description {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 52.40px;
+    }
+}
 
 .icon-card {
     margin-bottom: 25px;
@@ -632,6 +650,10 @@ footer {
     }
 }
 
+.body-wrap {
+    overflow-x: hidden;
+}
+
 .large-logo {
     position: absolute;
     bottom: 50px;
@@ -644,10 +666,6 @@ footer {
 
 }
 
-body {
-    overflow-x: hidden;
-}
-
 h2 {
     font-size: 1.8rem;
 }
@@ -658,5 +676,62 @@ h2 {
     }
 }
 
+#hamburger {
+    background-color: black;
+    padding: 8px 8px 0px 8px;
+    position: fixed;
+    top: 28px;
+    right: 32px;
+    z-index: 999;
+    color: white;
+}
+#hamburger:hover {
+    cursor: pointer;
+}
+
+.no-display {
+    display: none !important;
+}
+
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
+@media (min-width: 760px) {
+    .no-display {
+        display: inherit !important;
+    }
+
+    #hamburger {
+        display: none !important;
+    }
+
+    .navbar {
+        height: 60px;
+
+        &__item {
+            display: inline-block;
+        }
+        .links {
+            float: right;
+        }
+        .logo {
+            display: inherit;
+        }
+    }
+
+}
+
+@media (max-width: 760px) {
+    .t-r {
+        text-align: left;
+
+        & p {
+            margin-left: 0;
+            margin-right: auto;
+        }
+    }
+}
 
 // Effects
