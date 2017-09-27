@@ -100,6 +100,14 @@ textarea {
     display: none;
   }
 }
+@media only screen and (min-width: 600px) {
+  .screenshot-graph{
+    display: none;
+  }
+  .tableau-graph{
+    display: block;
+  }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
