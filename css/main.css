@@ -77,6 +77,24 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*media query: mobile responsive*/
+.screenshot-graph{
+  width: 100%;
+  height: auto;
+  display: none;
+}
+.screenshot{
+  width:100%;
+  height: auto;
+}
+@media only screen and (max-width: 600px) {
+  .screenshot-graph{
+    display: block;
+  }
+  .tableau-graph{
+    display: none;
+  }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
