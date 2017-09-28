@@ -91,6 +91,9 @@ textarea {
   width:120%;
   height: auto;
 }
+.learn-more{
+  color: #4f80ae;!important
+}
 
 @media only screen and (max-width: 600px) {
   .screenshot-graph{
@@ -476,7 +479,8 @@ body.padded {
   .cards [class^="col-"] p {
     max-width: 450px; }
   .cards [class^="col-"] a {
-    color: #000;
+    color: #4f80ae;
+    /*color: #000;*/
     font-weight: 800; }
 .cards [class*="bg-image"] {
   transition: all 2000ms ease-out;
