@@ -91,6 +91,9 @@ textarea {
   width:120%;
   height: auto;
 }
+.learn-more{
+  color: #4f80ae;!important
+}
 
 @media only screen and (max-width: 600px) {
   .screenshot-graph{
@@ -396,7 +399,8 @@ body.padded {
     position: relative;
     -webkit-clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
-    margin-bottom: -1px;
+    /*margin-bottom: -1px;*/
+    margin-bottom: 0px;
     padding-left: 30px; }
     .main-header .curtain .control {
       width: 500px;
@@ -475,7 +479,8 @@ body.padded {
   .cards [class^="col-"] p {
     max-width: 450px; }
   .cards [class^="col-"] a {
-    color: #000;
+    color: #4f80ae;
+    /*color: #000;*/
     font-weight: 800; }
 .cards [class*="bg-image"] {
   transition: all 2000ms ease-out;
