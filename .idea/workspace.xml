@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94b66c36-49c1-49fc-b114-bcb612910a81" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/.sass-cache/f29af6059d1b099f7905cc1749f5816d46434f65/main.scssc" afterPath="$PROJECT_DIR$/css/.sass-cache/f29af6059d1b099f7905cc1749f5816d46434f65/main.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/menu.png" afterPath="$PROJECT_DIR$/img/menu.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/x.png" afterPath="$PROJECT_DIR$/img/x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css.map" afterPath="$PROJECT_DIR$/css/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.scss" afterPath="$PROJECT_DIR$/css/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/correlations.html" afterPath="$PROJECT_DIR$/html/correlations.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/demographics.html" afterPath="$PROJECT_DIR$/html/demographics.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/lifestyle.html" afterPath="$PROJECT_DIR$/html/lifestyle.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-    </list>
+    <list default="true" id="94b66c36-49c1-49fc-b114-bcb612910a81" name="Default" comment="" />
     <ignored path="survey.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -189,7 +176,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../meganr126.github.io" />
     <property name="editor.config.accepted" value="true" />
   </component>
   <component name="RunManager">
