@@ -11,6 +11,7 @@ $(function() {
             nav_open = false;
             $("#nav").addClass("no-display");
             $("body").removeClass("no-scroll");
+            $("#hamburger").style("background-image: url('/media/survey/img/x.png');");
         }
         else {
             nav_open = true;
@@ -36,10 +37,10 @@ $(function() {
         if(!mobile) {
             if($(this).scrollTop() > hdr) {
                 mn.addClass("sticky");
-                $('body').addClass("padded");
+                $('.body-wrap').addClass("padded");
             } else {
                 mn.removeClass("sticky");
-                $('body').removeClass("padded");
+                $('.body-wrap').removeClass("padded");
             }
         }
     });
@@ -48,6 +49,7 @@ $(function() {
     $(window).resize(function() {
         if($(window).width() < 760) {
             if (mobile == false) {
+                $('.body-wrap').removeClass("padded");
                 mn.addClass("sticky");
                 mobile = true;
             }
@@ -56,15 +58,15 @@ $(function() {
             if (mobile == true) {
                 mn.addClass("no-display");
                 mobile = false;
-                $('body').removeClass("no-scroll");
+                $('.body-wrap').removeClass("no-scroll");
                 nav_open = false;
 
                 if($(this).scrollTop() > hdr) {
                     mn.addClass("sticky");
-                    $('body').addClass("padded");
+                    $('.body-wrap').addClass("padded");
                 } else {
                     mn.removeClass("sticky");
-                    $('body').removeClass("padded");
+                    $('.body-wrap').removeClass("padded");
                 }
             }
         }

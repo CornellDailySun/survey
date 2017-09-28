@@ -307,35 +307,35 @@ $source-sans: 'Source Sans Pro', sans-serif;
 
 @font-face {
     font-family: 'Circular Std Black';
-    src: local('Circular Std Black'), url('../fonts/CircularStd-Black.woff') format('woff');
+    src: local('Circular Std Black'), url('/media/survey/fonts/CircularStd-Black.woff') format('woff');
 }
 @font-face {
     font-family: 'Circular Std Book';
-    src: local('Circular Std Black'), url('../fonts/CircularStd-Book.woff') format('woff');
+    src: local('Circular Std Black'), url('/media/survey/fonts/CircularStd-Book.woff') format('woff');
 }
 @font-face {
     font-family: 'Circular Std Medium';
-    src: local('Circular Std Black'), url('../fonts/CircularStd-Medium.woff') format('woff');
+    src: local('Circular Std Black'), url('/media/survey/fonts/CircularStd-Medium.woff') format('woff');
 }
 @font-face {
     font-family: 'Circular Std Black Italic';
-    src: local('Circular Std Black'), url('../fonts/CircularStd-BlackItalic.woff') format('woff');
+    src: local('Circular Std Black'), url('/media/survey/fonts/CircularStd-BlackItalic.woff') format('woff');
 }
 @font-face {
     font-family: 'Circular Std Bold';
-    src: local('Circular Std Black'), url('../fonts/CircularStd-Bold.woff') format('woff');
+    src: local('Circular Std Black'), url('/media/survey/fonts/CircularStd-Bold.woff') format('woff');
 }
 @font-face {
     font-family: 'Circular Std Bold Italic';
-    src: local('Circular Std Black'), url('../fonts/CircularStd-BoldItalic.woff') format('woff');
+    src: local('Circular Std Black'), url('/media/survey/fonts/CircularStd-BoldItalic.woff') format('woff');
 }
 @font-face {
     font-family: 'Circular Std Book Italic';
-    src: local('Circular Std Black'), url('../fonts/CircularStd-BookItalic.woff') format('woff');
+    src: local('Circular Std Black'), url('/media/survey/fonts/CircularStd-BookItalic.woff') format('woff');
 }
 @font-face {
     font-family: 'Circular Std Medium Italic';
-    src: local('Circular Std Black'), url('../fonts/CircularStd-MediumItalic.woff') format('woff');
+    src: local('Circular Std Black'), url('/media/survey/fonts/CircularStd-MediumItalic.woff') format('woff');
 }
 
 
@@ -460,7 +460,7 @@ body.padded {
     .logo-white { display: none; }
 
     .imagebox {
-        background-image: url('../img/header.jpg');
+        background-image: url('/media/survey/img/header.jpg');
         background-size: cover;
         background-position: center;
         position: absolute;
@@ -628,14 +628,14 @@ body.padded {
         clip-path: polygon(0 0, calc(100% - 12.8%) 0%, 100% 100%, 0% 100%);
     }
     .bg-image-1 {
-        background-image: url("../img/row-1.jpg");
+        background-image: url("/media/survey/img/row-1.jpg");
         background-position: center bottom;
     }
     .bg-image-2 {
-        background-image: url("../img/row-2.jpg");
+        background-image: url("/media/survey/img/row-2.jpg");
     }
     .bg-image-3 {
-        background-image: url("../img/row-3.jpg");
+        background-image: url("/media/survey/img/row-3.jpg");
         background-position: center center;
     }
     @media (max-width: 1000px) {
@@ -695,13 +695,15 @@ h2 {
 }
 
 #hamburger {
-    background-color: black;
-    padding: 8px 8px 0px 8px;
     position: fixed;
     top: 28px;
     right: 32px;
     z-index: 999;
     color: white;
+    background-image: url('/media/survey/img/menu.png');
+    height: 40px;
+    width: 40px;
+    background-size: contain;
 }
 #hamburger:hover {
     cursor: pointer;
