@@ -77,50 +77,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.sig{
-  font-style: italic;
-  color: #696969;!important
-}
-/*footer logo*/
-.footer-image{
-  width:80%;
-  height: auto;
-}
-
-/*media query: mobile responsive*/
-.screenshot-graph{
-  width: 100%;
-  height: auto;
-  display: none;
-}
-.screenshot{
-  width:100%;
-  height: auto;
-}
-.smaller-shot{
-  width:120%;
-  height: auto;
-}
-.learn-more{
-  color: #4f80ae;!important
-}
-
-@media only screen and (max-width: 600px) {
-  .screenshot-graph{
-    display: block;
-  }
-  .tableau-graph{
-    display: none;
-  }
-}
-@media only screen and (min-width: 600px) {
-  .screenshot-graph{
-    display: none;
-  }
-  .tableau-graph{
-    display: block;
-  }
-}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -260,28 +216,28 @@ textarea {
     page-break-after: avoid; } }
 @font-face {
   font-family: 'Circular Std Black';
-  src: local("Circular Std Black"), url("/media/survey/fonts/CircularStd-Black.woff") format("woff"); }
+  src: local("Circular Std Black"), url("/projects/survey/fonts/CircularStd-Black.woff") format("woff"); }
 @font-face {
   font-family: 'Circular Std Book';
-  src: local("Circular Std Black"), url("/media/survey/fonts/CircularStd-Book.woff") format("woff"); }
+  src: local("Circular Std Black"), url("/projects/survey/fonts/CircularStd-Book.woff") format("woff"); }
 @font-face {
   font-family: 'Circular Std Medium';
-  src: local("Circular Std Black"), url("/media/survey/fonts/CircularStd-Medium.woff") format("woff"); }
+  src: local("Circular Std Black"), url("/projects/survey/fonts/CircularStd-Medium.woff") format("woff"); }
 @font-face {
   font-family: 'Circular Std Black Italic';
-  src: local("Circular Std Black"), url("/media/survey/fonts/CircularStd-BlackItalic.woff") format("woff"); }
+  src: local("Circular Std Black"), url("/projects/survey/fonts/CircularStd-BlackItalic.woff") format("woff"); }
 @font-face {
   font-family: 'Circular Std Bold';
-  src: local("Circular Std Black"), url("/media/survey/fonts/CircularStd-Bold.woff") format("woff"); }
+  src: local("Circular Std Black"), url("/projects/survey/fonts/CircularStd-Bold.woff") format("woff"); }
 @font-face {
   font-family: 'Circular Std Bold Italic';
-  src: local("Circular Std Black"), url("/media/survey/fonts/CircularStd-BoldItalic.woff") format("woff"); }
+  src: local("Circular Std Black"), url("/projects/survey/fonts/CircularStd-BoldItalic.woff") format("woff"); }
 @font-face {
   font-family: 'Circular Std Book Italic';
-  src: local("Circular Std Black"), url("/media/survey/fonts/CircularStd-BookItalic.woff") format("woff"); }
+  src: local("Circular Std Black"), url("/projects/survey/fonts/CircularStd-BookItalic.woff") format("woff"); }
 @font-face {
   font-family: 'Circular Std Medium Italic';
-  src: local("Circular Std Black"), url("/media/survey/fonts/CircularStd-MediumItalic.woff") format("woff"); }
+  src: local("Circular Std Black"), url("/projects/survey/fonts/CircularStd-MediumItalic.woff") format("woff"); }
 h1, h2, h3, h4, h5, h6, p {
   font-family: "Source Sans Pro", sans-serif; }
 
@@ -378,7 +334,7 @@ body.padded {
   .main-header .logo-white {
     display: none; }
   .main-header .imagebox {
-    background-image: url("/media/survey/img/header.jpg");
+    background-image: url("/projects/survey/img/header.jpg");
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -403,18 +359,16 @@ body.padded {
     font-weight: 500; }
   .main-header .curtain {
     background: #fff;
-
     color: #000;
     width: 50%;
     padding: 250px 0;
     position: relative;
+    -webkit-clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
-    /*margin-bottom: -1px;*/
-    margin-bottom: 0px;
+    margin-bottom: -1px;
     padding-left: 30px; }
     .main-header .curtain .control {
       width: 500px;
-
       display: block;
       margin: 0 auto; }
   .main-header h1 {
@@ -490,8 +444,7 @@ body.padded {
   .cards [class^="col-"] p {
     max-width: 450px; }
   .cards [class^="col-"] a {
-    color: #4f80ae;
-    /*color: #000;*/
+    color: #000;
     font-weight: 800; }
 .cards [class*="bg-image"] {
   transition: all 2000ms ease-out;
@@ -517,12 +470,12 @@ body.padded {
   -webkit-clip-path: polygon(0 0, calc(100% - 12.8%) 0%, 100% 100%, 0% 100%);
   clip-path: polygon(0 0, calc(100% - 12.8%) 0%, 100% 100%, 0% 100%); }
 .cards .bg-image-1 {
-  background-image: url("/media/survey/img/row-1.jpg");
+  background-image: url("/projects/survey/img/row-1.jpg");
   background-position: center bottom; }
 .cards .bg-image-2 {
-  background-image: url("/media/survey/img/row-2.jpg"); }
+  background-image: url("/projects/survey/img/row-2.jpg"); }
 .cards .bg-image-3 {
-  background-image: url("/media/survey/img/row-3.jpg");
+  background-image: url("/projects/survey/img/row-3.jpg");
   background-position: center center; }
 @media (max-width: 1000px) {
   .cards .content-on-left, .cards .content-on-right {
@@ -566,7 +519,7 @@ h2 {
   right: 32px;
   z-index: 999;
   color: white;
-  background-image: url("/media/survey/img/menu.png");
+  background-image: url("/projects/survey/img/menu.png");
   height: 40px;
   width: 40px;
   background-size: contain; }
