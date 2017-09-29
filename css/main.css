@@ -79,6 +79,7 @@ textarea {
    ========================================================================== */
 .sig{
   font-style: italic;
+  color: #696969;!important
 }
 /*footer logo*/
 .footer-image{
