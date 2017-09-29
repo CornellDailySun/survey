@@ -100,7 +100,50 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.sig{
+  font-style: italic;
+  color: #696969 !important;
+}
+/*footer logo*/
+.footer-image{
+  width:80%;
+  height: auto;
+}
 
+/*media query: mobile responsive*/
+.screenshot-graph{
+  width: 100%;
+  height: auto;
+  display: none;
+}
+.screenshot{
+  width:100%;
+  height: auto;
+}
+.smaller-shot{
+  width:120%;
+  height: auto;
+}
+.learn-more{
+  color: #4f80ae !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .screenshot-graph{
+    display: block;
+  }
+  .tableau-graph{
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .screenshot-graph{
+    display: none;
+  }
+  .tableau-graph{
+    display: block;
+  }
+}
 
 
 
