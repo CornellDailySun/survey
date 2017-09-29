@@ -19,6 +19,8 @@
 
         <script src="/projects/survey/js/main.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+        <!--favicon-->
+        <link rel="icon" href="/projects/survey/img/logo-red.ico" type="image/x-icon"/>
     </head>
     <body>
         <div class="body-wrap">
@@ -27,7 +29,6 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-
 
          <section class="main-header">
         <div class="container-fluid">
@@ -45,7 +46,11 @@
         </div>
         </section>
 
-        <div id="hamburger"><i data-feather="menu"></i></div>
+        <div id="hamburger"><i data-feather="menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+        </i></div>
         <nav class="navbar no-display" id="nav">
             <a href="/projects/survey/index.html">
                 <img src="/projects/survey/img/logo-red.png" class="logo">
@@ -55,7 +60,8 @@
                 <div class="navbar__item"><a href="#">Demographics & Academics</a></div>
                 <div class="navbar__item"><a href="/projects/survey/lifestyle.html">Lifestyle & Ideology</a></div>
                 <!--<a href="#">Lifestyle</a>-->
-                <div class="navbar__item"><a href="/projects/survey/correlations.html">Correlations</a></div>
+
+                <div class="navbar__item"><a href="/projects/survey/correlations.html">Notable Trends</a></div>
             </div>
         </nav>
 
@@ -69,53 +75,79 @@
 
 
 
-                <div id="race-chart">
-                    <div class='tableauPlaceholder' id='viz1506224640718' style='position: relative'><noscript><a href='#'><img alt='Race ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDSAdd-ongraphsAutosizing&#47;Race&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='2' /> <param name='site_root' value='' /><param name='name' value='CDSCDSAdd-ongraphsAutosizing&#47;Race' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDSAdd-ongraphsAutosizing&#47;Race&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1506224640718');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-
-                    <!--Race Chart
-                    <div class='tableauPlaceholder' id='viz1505448192195' style='position: relative'><noscript><a href='#'><img alt='Race ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Race&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='CDSCDS&#47;Race' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Race&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1505448192195');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.45)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>-->
+                <div id="race-chart" class="tableau-graph">
+                    <div class='tableauPlaceholder' id='viz1506664491797' style='position: relative'><noscript><a href='#'><img alt='Race ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDSUpdate&#47;Race&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='2' /> <param name='site_root' value='' /><param name='name' value='CDSCDSUpdate&#47;Race' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDSUpdate&#47;Race&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1506664491797');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                 </div>
-                 <p class="graph__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <div class="screenshot-graph">
+                    <img class="smaller-shot" src="/projects/survey/img/screenshots/demographics/race.png">
+                </div>
+                 <p>The graph above shows the reported races of the people whose responses we’ve used to assemble our data. The reported representation of each race here tends to mirror the races that Cornell reported for the Class of 2021 — mostly white, then Asian, Hispanic, black, and so on.
+                 </p>
+
+                <p class="graph__description">Since the Class of 2021 settled into Cornell’s campus in August, at least two large <a href="http://cornellsun.com/2017/09/20/hundreds-of-cornell-students-occupy-willard-straight-hall-after-delivering-demands-to-university/" target="_blank">racial protests</a> with hundreds of people each have emerged due in part to the alleged Collegetown beating of a black student, a <a href="http://cornellsun.com/2017/09/25/arraignment-of-arrested-cornell-student-delayed-while-grand-jury-determines-charges/" target="_blank">possible hate crime</a> that has become <a href="https://www.washingtonpost.com/news/grade-point/wp/2017/09/20/a-black-cornell-student-said-he-was-beaten-and-called-the-n-word-roiling-the-ivy-league-campus/?utm_term=.0bfdc1b31898" target="_blank">national news.</a> Race is frequently a topic of discussion at Cornell, whether in humanities classrooms or among guest speakers, but for some members of the Class of 2021, racial awareness and conversation may be a defining feature of their Cornell experience to this point.</p>
 
                 <h1>Gender</h1>
-                <div id="gender-chart">
-
+                <div id="gender-chart" class="tableau-graph">
                     <!--gender chart-->
                     <div class='tableauPlaceholder' id='viz1505448241447' style='position: relative'><noscript><a href='#'><img alt='Gender ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Gender&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='CDSCDS&#47;Gender' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Gender&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1505448241447');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.40)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                 </div>
-
-                 <p class="graph__description">About 100 more women than men contributed to the data we used in this survey, and these survey results should be viewed in light of that finding. <a href="http://irp.dpb.cornell.edu/wp-content/uploads/2017/08/Profile2017-Freshmen.pdf">Cornell reports having about 196 more women than men in the Class of 2021</a>, but since we didn’t survey the entire 3,375-person class, our results indicate skew.</p>
+                <div class="screenshot-graph">
+                    <img class="screenshot" src="/projects/survey/img/screenshots/demographics/gender.png">
+                </div>
+                 <p class="graph__description">About 100 more women than men contributed to the data we used in this survey, and these survey results should be viewed in light of that finding. <a href="http://irp.dpb.cornell.edu/wp-content/uploads/2017/08/Profile2017-Freshmen.pdf" target="_blank">Cornell reports having about 196 more women than men in the Class of 2021</a>, but since we didn’t survey the entire 3,375-person class, our results indicate skew.</p>
 
 
                 <h1>Household Income Groups</h1>
-                <div class='tableauPlaceholder' id='viz1505833044757' style='position: relative'><noscript><a href='#'><img alt='Household Income Groups ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Sheet9&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='CDSCDS&#47;Sheet9' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Sheet9&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1505833044757');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.35)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                <div class="tableau-graph">
+                    <div class='tableauPlaceholder' id='viz1505833044757' style='position: relative'><noscript><a href='#'><img alt='Household Income Groups ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Sheet9&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='CDSCDS&#47;Sheet9' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Sheet9&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1505833044757');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.35)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+                <div class="screenshot-graph">
+                    <img class="screenshot" src="/projects/survey/img/screenshots/demographics/income.png">
+                </div>
 
-                 <p class="graph__description">In January, The Sun <a href="http://cornellsun.com/2017/01/23/1-in-10-c-u-students-in-richest-1-low-income-students-underrepresented-study-finds/">reported</a> that one in 10 Cornell students comes from the top one percent income level. While our survey did not ask specifically for income percentiles, our respondents indicated similarly high income levels, and considering the <a href="http://time.com/4937969/american-median-income-record/">United States’s average yearly household income in 2016 was $59,039</a>, it remains apparent that the average Cornellian comes from a strong financial background. In fact, 60 percent of respondents who answered this question and whose answers were not cut indicated that their households earn at least $125,000 annually.</p>
+                 <p class="graph__description">In January, The Sun <a href="http://cornellsun.com/2017/01/23/1-in-10-c-u-students-in-richest-1-low-income-students-underrepresented-study-finds/" target="_blank">reported</a> that one in 10 Cornell students comes from the top one percent income level. While our survey did not ask specifically for income percentiles, our respondents indicated similarly high income levels, and considering the <a href="http://time.com/4937969/american-median-income-record/" target="_blank">United States’s average yearly household income in 2016 was $59,039</a>, it remains apparent that the average Cornellian comes from a strong financial background. In fact, 60 percent of respondents who answered this question and whose answers were not cut indicated that their households earn at least $125,000 annually.</p>
 
                 <h1>Financial Aid and Household Income</h1>
-                <div class='tableauPlaceholder' id='viz1505449488220' style='position: relative'><noscript><a href='#'><img alt='Financial Aid and Household Income ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Sheet13&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='CDSCDS&#47;Sheet13' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Sheet13&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1505449488220');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                <div class="tableau-graph">
+                    <div class='tableauPlaceholder' id='viz1505449488220' style='position: relative'><noscript><a href='#'><img alt='Financial Aid and Household Income ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Sheet13&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='CDSCDS&#47;Sheet13' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Sheet13&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1505449488220');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+                <div class="screenshot-graph">
+                    <img class="screenshot" src="/projects/survey/img/screenshots/demographics/finaid&income.png">
+                </div>
 
-                <p class="graph__description">As expected, there is a clear correlation between lower income level and receiving financial aid. The overwhelming majority of students whose households earn less than $125,000 annually reported that they receive financial aid from the University, while just six percent of students whose households earn at least $250,000 said they benefit from financial aid.
+                <p>As expected, there is a clear correlation between lower income level and receiving financial aid. The overwhelming majority of students whose households earn less than $125,000 annually reported that they receive financial aid from the University, while just six percent of students whose households earn at least $250,000 said they benefit from financial aid.
                 </p>
                 <p class="graph__description">
-                Cornell reported that <a href="http://irp.dpb.cornell.edu/wp-content/uploads/2017/08/Profile2017-Freshmen.pdf">43.6 percent of full-time, first-year students are receiving need-based grant aid</a> from the University, which granted just above $40,000 on average to its financial aid beneficiaries.
+                Cornell reported that <a href="http://irp.dpb.cornell.edu/wp-content/uploads/2017/08/Profile2017-Freshmen.pdf" target="_blank">43.6 percent of full-time, first-year students are receiving need-based grant aid</a> from the University, which granted just above $40,000 on average to its financial aid beneficiaries.
                 </p>
 
-                <h1>Was Cornell Your Top Choice?</h1>
-                <div class='tableauPlaceholder' id='viz1505495963748' style='position: relative'><noscript><a href='#'><img alt='Was Cornell Your Top Choice? ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Sheet10&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='CDSCDS&#47;Sheet10' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Sheet10&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1505495963748');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                <h1>Cornell Top Choice</h1>
+                <div class="tableau-graph">
+                    <div class='tableauPlaceholder' id='viz1505495963748' style='position: relative'><noscript><a href='#'><img alt='Was Cornell Your Top Choice? ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Sheet10&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='CDSCDS&#47;Sheet10' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Sheet10&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1505495963748');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+                <div class="screenshot-graph">
+                    <img class="screenshot" src="/projects/survey/img/screenshots/demographics/wascornelltopchoice.png">
+                </div>
 
                 <p class="graph__description">Despite the College of Arts and Sciences’s and the College of Engineering’s ability to boast about their selectivity, our data suggest that all five of Cornell’s other colleges can claim that the majority of their students actually wanted to attend their school above all others. The quality that most of those five of other colleges share is that they specialize in a particular area. The hotel school and the ILR school, for example, are some of the only schools of their kind in the country, and many of the other schools offer highly unique majors: urban and regional studies (AAP), fiber science and apparel design (Human Ecology), and food sciences (CALS). But the arts college and the engineering college may retain ultimate bragging rights, as they were the homes of two of Cornell’s most famous (and recently controversial) alumni: Supreme Court Justice Ruth Bader Ginsburg ’54 and “science guy” Bill Nye ’77, respectively.</p>
 
                 <h1>Cornell Legacy and ACT Scores</h1>
-                <div class='tableauPlaceholder' id='viz1505496057960' style='position: relative'><noscript><a href='#'><img alt='Cornell Legacy and ACT Scores ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Sheet12&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='CDSCDS&#47;Sheet12' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Sheet12&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1505496057960');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-
+                <div class="tableau-graph">
+                    <div class='tableauPlaceholder' id='viz1505496057960' style='position: relative'><noscript><a href='#'><img alt='Cornell Legacy and ACT Scores ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Sheet12&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='CDSCDS&#47;Sheet12' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;Sheet12&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1505496057960');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+                <div class="screenshot-graph">
+                    <!--have to add in the 36 score-->
+                    <img class="screenshot" src="/projects/survey/img/screenshots/demographics/cornelllegacy&act.png">
+                </div>
 
                 <p class="graph__description">The ACT score distributions of legacies and non-legacies are remarkably similar; even the small differences between scores of legacies reflect in the scores of non-legacies. What’s more, if you crunch the numbers and compare the average ACT score of legacies versus that of non-legacies, you’ll see that they differ only by .06 points out of 36, with non-legacies winning the photo finish.</p>
 
 
-
-                <div class='tableauPlaceholder' id='viz1506276642870' style='position: relative'><noscript><a href='#'><img alt='Map Dash ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;MapDash&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='2' /> <param name='site_root' value='' /><param name='name' value='CDSCDS&#47;MapDash' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;MapDash&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1506276642870');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-            </div>
+                <!--<div class="tableau-graph">-->
+            <!--    <div>
+                    <div class='tableauPlaceholder' id='viz1506276642870' style='position: relative'><noscript><a href='#'><img alt='Map Dash ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;MapDash&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='2' /> <param name='site_root' value='' /><param name='name' value='CDSCDS&#47;MapDash' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CD&#47;CDSCDS&#47;MapDash&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1506276642870');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+            </div>-->
 
 
             </section>
@@ -129,25 +161,21 @@
         <footer class="bg-coffee">
         <div class="container">
             <h1>Credits</h1>
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>The Cornell Daily Sun</h2>
-                    <p>Brian LaPlaca, Drew Musto, Emma Williams,<br> Megan Roche, Melody Li, Mind Apivessa, <br>Simeon Videnov, Sophia Deng, <br> Julian Ohta</p>
+             <div class="row">
+                    <div class="col-md-7 sun-footer">
+                        <!--<h2><a href="http://cornellsun.com" target="_blank">The Cornell Daily Sun</a></h2>-->
+                        <h2><a href="http://cornellsun.com" target="_blank"><img src="/projects/survey/img/full-sun-logo.png" class="footer-image"></a></h2>
+                        <p>Brian LaPlaca, Drew Musto, Emma Williams,<br> Megan Roche, Melody Li, Mind Apivessa, <br>Simeon Videnov, Sophia Deng, <br> Julian Ohta</p>
+                    </div>
+                    <div class="col-md-5 datasci-footer">
+                        <!--<h2><a href="http://cornelldata.science" target="_blank">Cornell Data Science</a></h2>-->
+                        <h2><a href="http://cornelldata.science" target="_blank"><img src="/projects/survey/img/cornelldatasci.png"></a></h2>
+                        <p>Dae Won Kim, Nolan Gray, <br>Sourabh Chakraborty</p>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <h2>Cornell Data Science</h2>
-                    <p>Amit Mizrahi, Dae Won Kim, Kenta Takatsu, <br> Nolan Gray, Sourabh Chakraborty</p>
-                </div>
-            </div>
 
         </div>
         </footer>
-
-
-
-
-
-
 
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
