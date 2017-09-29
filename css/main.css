@@ -77,6 +77,9 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+#sig{
+  font-style: italic;
+}
 /*footer logo*/
 .footer-image{
   width:80%;
@@ -399,17 +402,18 @@ body.padded {
     font-weight: 500; }
   .main-header .curtain {
     background: #fff;
+
     color: #000;
     width: 50%;
     padding: 250px 0;
     position: relative;
-    -webkit-clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
     /*margin-bottom: -1px;*/
     margin-bottom: 0px;
     padding-left: 30px; }
     .main-header .curtain .control {
       width: 500px;
+
       display: block;
       margin: 0 auto; }
   .main-header h1 {
